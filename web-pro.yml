@@ -2,6 +2,9 @@ user:
   name: 梦奇刘
   
 spring:
+  thymeleaf:
+    cache: false
+    mode: LEGACYHTML5
   redis:
     host: 192.168.1.112
     port: 6379
@@ -13,3 +16,12 @@ spring:
         max-wait: -1
         max-idle: 10
         min-idle: 0
+        
+feign:
+  hystrix:
+    enabled: true
+    
+eureka:
+  client:
+    service-url:
+      defaultZone: http://192.168.1.112:8761/eureka
