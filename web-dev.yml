@@ -1,7 +1,12 @@
 user:
   name: 刘梦奇
   
+server:
+  port: 8080 
+
 spring:
+  application:
+    name: web
   thymeleaf:
     cache: false
     mode: LEGACYHTML5
