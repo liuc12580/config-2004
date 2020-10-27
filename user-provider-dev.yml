@@ -5,6 +5,8 @@ spring:
     url: jdbc:mysql://localhost:3306/2004?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&serverTimezone=GMT%2B8
     username: root
     password: root
+  zipkin:
+    base-url: http://localhost:9411
     
 eureka:
   client:
